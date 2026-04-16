@@ -23,7 +23,7 @@ This of course comes with a few drawbacks that are fixable. Howeve you should ta
 3.Short variable names ARE NOT recommended. This is because if you have the name of a variable inside another variable IT WILL NOT WORK (you wont get any errors but the code wont compile)
   so: if a var is named user you cannot have another named user_name BUT you can however have 2 variables named user_name and user_username (this is because the obfuscator will not obfuscate them twice as he   vieuws them as seperate)
 
-4.every # should be defined in the beginning of the code BEFORE ANYTHING ELSE (this include #include, #define, ....)
+4.every # should be defined in the beginning of the code BEFORE ANYTHING ELSE (this include #include, #define, ....) ALSO dont put spaces between #include and <> and you will have to manually seperate the #define and the following variable (that is really simple to do and saves me a lot of time)
 
 
 I know my program is kind of hard to read and coded like shit (but it is a personal project so if only i can read it it's not a problem) BUT there are no functionning c obfuscators out there (not that i know of at least) so if enough people are interested in making it more maintainable / more general PLEASE let me know and i'll work right on it.
