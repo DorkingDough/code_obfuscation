@@ -62,7 +62,7 @@ def one(inp, out):#this removes all comments (simplest code protection)
 
 def second(out):
     data_types = ["bool", "char", "signed", "unsigned", "short", "long", "int", "float", "double", "void", "static", "const", 
-                  "struct", "DIR", "FILE", "#define", "typdef"]
+                  "struct", "DIR", "FILE", "#define", "typdef", "enum"]
     to_be_skipped = ["*", "&"] #these characters can come after a data type but should not be replaced as they are integral
     turnoffs = ["(", ")", "{", "}", "[", "]", ";"] #if a variable type gives back a parentheses it means the switch should be back to 0
     var = []
@@ -226,3 +226,4 @@ while difficulty != 0:
         print("invalid choice please try again (select between 1, 2 or 3)")
         difficulty = int(input("chose level of protectiveness:  "))
 #}
+
